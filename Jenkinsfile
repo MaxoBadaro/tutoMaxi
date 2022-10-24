@@ -7,7 +7,7 @@ pipeline {
             steps {
                 container('podman') {
                     script {
-                        sh 'podman ps'
+                        sh 'podman run hello_world'
                     }
                 }
                 container('kubectl') {
