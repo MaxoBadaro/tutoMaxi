@@ -15,6 +15,11 @@ pipeline {
                         sh 'kubectl version'
                     }
                 }
+                container('fortune') {
+                    script {
+                        sh 'fortune'
+                    }
+                }
             }
         }
     }
