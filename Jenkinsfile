@@ -12,7 +12,7 @@ pipeline {
                 }
                 container('kubectl') {
                     script {
-                        sh 'kubectl version'
+                        sh 'kubectl get pods'
                     }
                 }
                 container('fortune') {
