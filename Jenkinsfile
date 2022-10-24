@@ -12,6 +12,7 @@ pipeline {
                 }
                 container('kubectl') {
                     script {
+                        sh 'env'
                         sh 'kubectl get pods'
                     }
                 }
